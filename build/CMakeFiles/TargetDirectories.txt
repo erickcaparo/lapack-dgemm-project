@@ -1,0 +1,3 @@
+/home/erickcaparochavez/lapack-dgemm-project/build/CMakeFiles/dgemm.dir
+/home/erickcaparochavez/lapack-dgemm-project/build/CMakeFiles/edit_cache.dir
+/home/erickcaparochavez/lapack-dgemm-project/build/CMakeFiles/rebuild_cache.dir
