@@ -1,6 +1,6 @@
-# 🚀 LAPACK DGEMM Benchmark Project
+#  LAPACK DGEMM Benchmark Project
 
-## 🧠 Descripción
+##  Descripción
 
 Este proyecto implementa un sistema completo de **benchmarking para multiplicación de matrices densas**, comparando:
 
@@ -11,7 +11,7 @@ El objetivo es evaluar el rendimiento real, analizar la escalabilidad y demostra
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+##  Arquitectura del Sistema
 
 El proyecto sigue un pipeline reproducible:
 
@@ -19,7 +19,7 @@ El proyecto sigue un pipeline reproducible:
 Generación de matrices → Ejecución (C) → Benchmark → CSV → Visualización
 ```
 
-### 🔁 Flujo completo
+###  Flujo completo
 
 1. `generate_matrices.py`
 
@@ -50,7 +50,7 @@ Generación de matrices → Ejecución (C) → Benchmark → CSV → Visualizaci
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 lapack-dgemm-project/
@@ -81,20 +81,20 @@ lapack-dgemm-project/
 
 ---
 
-## ⚙️ Requisitos
+##  Requisitos
 
-### 🔧 Sistema
+###  Sistema
 
 * Linux (probado en Kali)
 * GCC / G++
 * CMake
 
-### 📚 Librerías
+###  Librerías
 
 * BLAS / LAPACK (OpenBLAS recomendado)
 * Python 3
 
-### 🐍 Python
+###  Python
 
 ```bash
 pip install numpy pandas matplotlib
@@ -102,7 +102,7 @@ pip install numpy pandas matplotlib
 
 ---
 
-## 🧮 Fundamento Teórico
+## Fundamento Teórico
 
 La multiplicación de matrices tiene complejidad:
 
@@ -116,11 +116,11 @@ Sin embargo, implementaciones optimizadas como **DGEMM**:
 * Optimizan uso de caché
 * Paralelizan operaciones
 
-👉 Resultado: **mejor rendimiento real sin cambiar la complejidad teórica**
+ Resultado: **mejor rendimiento real sin cambiar la complejidad teórica**
 
 ---
 
-## ⚙️ Compilación
+##  Compilación
 
 ```bash
 mkdir build
@@ -137,7 +137,7 @@ make
 ./build/dgemm 100
 ```
 
-### 📌 Salida esperada:
+###  Salida esperada:
 
 ```
 BLAS time:  0.0023 seconds
@@ -147,11 +147,11 @@ Results match ✅
 
 ---
 
-## ⏱️ Sistema de Benchmark
+##  Sistema de Benchmark
 
 El archivo `run_benchmarks.py` ejecuta pruebas automáticas:
 
-### 🔁 Características:
+###  Características:
 
 * Tamaños de matriz:
 
@@ -168,7 +168,7 @@ El archivo `run_benchmarks.py` ejecuta pruebas automáticas:
 
 ---
 
-## 🚀 Ejecutar Benchmark Completo
+##  Ejecutar Benchmark Completo
 
 ```bash
 python3 scripts/run_benchmarks.py
@@ -182,7 +182,7 @@ data/results.csv
 
 ---
 
-## 📊 Visualización
+##  Visualización
 
 ```bash
 python3 scripts/plot_results.py
@@ -190,12 +190,12 @@ python3 scripts/plot_results.py
 
 Genera:
 
-* 📈 `performance.png` → comparación directa
-* 📉 `complexity_fit.png` → ajuste de complejidad
+*  `performance.png` → comparación directa
+*  `complexity_fit.png` → ajuste de complejidad
 
 ---
 
-## 🔍 Validación Numérica
+##  Validación Numérica
 
 El sistema verifica la correcta implementación:
 
@@ -209,11 +209,11 @@ Criterio:
 diff < 1e-6 → resultados correctos
 ```
 
-👉 Esto garantiza integridad numérica del benchmark.
+ Esto garantiza integridad numérica del benchmark.
 
 ---
 
-## 🧠 Análisis Técnico
+##  Análisis Técnico
 
 ### 🔹 DGEMM (BLAS)
 
@@ -247,7 +247,7 @@ naive_dgemm(...)
 
 ---
 
-## 📈 Resultados Esperados
+##  Resultados Esperados
 
 * DGEMM supera ampliamente al método naive
 * Diferencia crece con el tamaño de matriz
@@ -255,7 +255,7 @@ naive_dgemm(...)
 
 ---
 
-## 🔁 Reproducibilidad
+##  Reproducibilidad
 
 ```bash
 Clonar el repositorio.
@@ -272,7 +272,7 @@ python3 scripts/plot_results.py
 
 ---
 
-## 📚 Aplicaciones
+##  Aplicaciones
 
 * Machine Learning
 * Simulación numérica
@@ -282,14 +282,14 @@ python3 scripts/plot_results.py
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **Erick Fosh Caparó Chávez**
 Ingeniero Civil | Maestría en Ciencias de la Computación.
 
 ---
 
-## 🏆 Valor del Proyecto
+##  Valor del Proyecto
 
 Este proyecto demuestra:
 
@@ -303,7 +303,7 @@ Este proyecto demuestra:
 
 ---
 
-## ⭐ Posibles Mejoras
+##  Posibles Mejoras
 
 * Uso de OpenMP (paralelismo)
 * Medición con `omp_get_wtime()`
@@ -313,7 +313,7 @@ Este proyecto demuestra:
 
 ---
 
-## 📎 Licencia
+##  Licencia
 
 Uso académico y educativo.
 
