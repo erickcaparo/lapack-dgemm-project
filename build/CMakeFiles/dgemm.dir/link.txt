@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/dgemm.dir/link.d CMakeFiles/dgemm.dir/src/main.c.o CMakeFiles/dgemm.dir/src/matrix_io.c.o CMakeFiles/dgemm.dir/src/naive.c.o CMakeFiles/dgemm.dir/src/benchmark.c.o -o dgemm  /usr/lib/x86_64-linux-gnu/libopenblas.so
